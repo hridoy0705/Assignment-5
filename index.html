@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinment-5</title>
+    <!-- Use Tailwindcss and daisyui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend{
+  font-family: "Lexend", sans-serif;
+  
+}
+
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#ABEF5F',
+                        btnbgcolor: '#B4F461',
+                       
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="style/styles.css">
+<body class="m-32">
+    <header class="my-7">
+        <!--navbar section-->
+        <nav class="navbar flex justify-around mt-2 fixed top-0 left-32 right-0 my-7">
+            <a href="index2.html"><button class="btn btn-sm bg-green-300">Blog</button></a>
+            <div class="flex items-center">
+                <img class=" size-8" src="/logo.png" alt="">
+                <h3 class="ml-2 font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex space-x-2 items-center">
+                <img src="/coin.png" alt="">
+                <h3 id="nav-account-balance" class="font-bold"> 300000 BDT</h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- download and histoy btn start -->
+         <div class=" flex items-center justify-center fixed top-12 left-32 right-0 my-5">
+            <div class="two-btn">
+            <button id="btn-donation" class="btn btn-outline bg-green-300">Donation</button>
+            <button class="btn btn-outline bg-blue-300">History</button>
+        </div>
+         </div>
+        <!-- download and histoy btn end -->
+         <div id="three-parant" class="three-parant-div hidden">
+            <!-- first banner section start -->
+            <div id="first-div" class="parant-div flex mt-7 gap-[100px]">
+            
+                <img class="w-80 lg:w-90" src="/noakhali.png" alt="">
+            
+                <div>
+                    <h3 id="first-main-balance" class="font-bold">000 BDT</h3>
+                    <div>
+                        <h1 class="font-bold">Donate for Flood Efected people of Bangladesh</h1>
+                        <p>At present flood efected is very common problem in Bangladesh.Evey year our country efected by flood.
+                            Many people loast their shalter on flood.The recent floods in Noakhali,Brammon-baria, and others some of
+                            district have caused significant damage to homes infrastructure. Your donation will help provide
+                            essential supplies and to those affected by this disaster. Every contribution, big or small, makes
+                            difference. Please
+                            join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text"></span>
+                        </label>
+                        <input id="donation" type="text" placeholder="Write Donation Amount" class="input input-bordered"
+                            required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="first-donation-btn" class="btn btn-primary text-2xl">Donation For Foodless</button>
+                    </div>
+                </div>
+            </div>
+            <!-- first banner section end -->
+            
+            <!-- second banner section start -->
+            <div id="second-div" class="parant-div flex mt-7 gap-[100px]">
+            
+                <img class="w-80 lg:w-90" src="/feni.png" alt="">
+            
+                <div class="parant-div ">
+                    <div class="flex space-x-2 items-center">
+                        <img src="/coin.png" alt="">
+                        <h3 id="second-main-balance" class="font-bold"> 2500 BDT</h3>
+                    </div>
+                    <div>
+                        <h1 class="font-bold">Donate for Flood Relief people of Bangladesh</h1>
+                        <p>At present flood efected people in Bangladesh very essential for thier relife.Evey year our country
+                            efected by flood.
+                            Many people loast their shalter on flood. they can not survibe thier normal life .The recent floods in
+                            Noakhali,Brammon-baria, and others some of
+                            district have caused significant damage to homes infrastructure. we should every one do help them. so
+                            that they can eat and they can stragol abnormal condition Your donation will help provide
+                            essential supplies and to those affected by this disaster. Every contribution, big or small, makesPlease
+                            join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text"></span>
+                        </label>
+                        <input id="second-input-balance" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="donation-for-shalterless" class="btn btn-primary text-2xl">Donation For shalterless</button>
+                    </div>
+                </div>
+            </div>
+            <!-- second banner section end -->
+            
+            <!-- third banner section start -->
+            <div id="third-div" class="parant-div  flex mt-7 gap-[100px]">
+                <img class="w-80 lg:w-90" src="/quota-protest.png" alt="">
+                <div class="parant-div ">
+                    <div class="flex space-x-2 items-center">
+                        <img src="/coin.png" alt="">
+                        <h3 id="third-main-balance" class="font-bold"> 2000 BDT</h3>
+                    </div>
+                    <div>
+                        <h1 class="font-bold"> Aid for Injured in the Quota Movement</h1>
+                        <p>Bangladesh gain freedom recently by students.Many stuents has lost thir valuable life and thousn of
+                            people disable normal life.they can not bear madical cost. so we should help thir so that they comeback
+                            normal life. At this moment significant hardship for many individuals. Your support
+                            is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By
+                            contributing,
+                            you help ensure that injured individuals receive the care and support they need during this challenging
+                            time. Every
+                            donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider
+                            making a
+                            donation to support these brave individuals in their time of need.</p>
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text"></span>
+                        </label>
+                        <input id="third-input-balance" type="text" placeholder="Write Donation Amount" class="input input-bordered"
+                            required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="btn-donation-for-treatment" class="btn btn-primary text-2xl">Donation For Treatment</button>
+                    </div>
+                </div>
+            </div>
+            <!-- third banner section end -->
+
+         </div>
+        
+    </main>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/donation.js"></script>
+
+    <a href="index2.html"></a>
+</body>
+
+</html>
